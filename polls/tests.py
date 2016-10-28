@@ -10,7 +10,7 @@ class QuestionMethodTests(TestCase):
 
     def test_was_published_recently_with_future_question(self):
         """
-        was_published_recently() should return False for for question whose
+        was_published_recently() should return False for questions whose
         pub_date is in future.
         """
         time = timezone.now() + datetime.timedelta(days=30)
